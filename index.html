@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74355624-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments)};
+    gtag('js', new Date());
+
+    gtag('config', 'UA-74355624-1');
+  </script>
+
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hustlin' Healthcare, a social impact game</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container-fluid" style="padding: 0; margin:0; overflow: hidden;"><!-- *** BEGIN CONTAINER -->
+  <!-- *** BEGIN HEADER *** -->
+  <header>
+    <div class= "row">
+      <!--
+      <img src="img/C&R_logo_large.png" alt="Cops &amp; Rubbers game logo" class="img-responsive center-block" id="logo">
+-->
+<!--      <div class="handcops hidden-xs" data-stellar-ratio='0.5'></div>
+      <div class="condoms hidden-xs" data-stellar-ratio='0.5'></div>
+-->
+    </div>
+    <div class= "row">
+      <div class="intro">
+        <div class="col-xs-12 col-lg-12 title"><h1>Hustlin' Health Care</h1></div>
+
+        <div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-1 col-lg-6 col-lg-offset-3">
+          <p>
+             The cost of health care in the United States is extremely high and continues to rise. While one can point to many problems with the current system, a most troublesome fact is that the average American has no idea what things actually cost. With a lack of transparency in the health care market, there is no way to establish standard prices. The prices on treatments cannot be lowered until patients act as informed consumers, demanding lower prices because they understand the system.</p>
+
+          <p><span class="red"><strong>Hustlin' Health Care</strong></span> is a board game designed by Clay Ewing that teaches people the real costs associated with medical treatments. Each player assumes the role of an insurance company, charging premiums and paying for patient care. Throughout the game, players see how a market economy works and become informed consumers. </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-lg-3 col-lg-offset-0">
+          <div class="order">
+            <a href="https://www.thegamecrafter.com/games/hustlin-health-care" class="btn btn-cops btn-cops-offset btn-lg btn-block" target="_blank">
+              Order <span class="red"><strong>Board Game</strong></span>
+            </a>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </header>
+  <!--  *** END HEADER *** -->
+  <!-- *** VIDEO *** -->
+  <div class="row">
+    <section class="video">
+      <div class='embed-container'>
+        <iframe allowfullscreen frameborder='0' src='https://player.vimeo.com/video/11562465?title=0&byline=0&portrait=0'></iframe>
+      </div>
+    </section>
+  </div>
+  <!-- *** END VIDEO *** -->
+  <!-- *** DESCRIPTION ***-->
+  <!--*** END DESCRIPTION ***-->
+  <!-- *** BEGIN FOOTER *** -->
+  <footer>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+      </div>
+    </div>  
+  </footer>
+  <!-- *** END FOOTER *** -->
+
+</div><!-- *** END CONTAINER *** -->
+  <!-- *** JAVASCRIPT *** -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script> 
+  <!--<script src="js/functions.js" type="text/javascript">
+  </script>-->
+  <script type="text/javascript">
+  $(function() {
+      $.stellar({ //using stellar.js for parallax effects
+        horizontalScrolling: false,
+        responsive: true
+      });
+      // Top of page fades
+      $("#logo, .intro, .video").hide(0).delay(1000).fadeIn(1000);
+      
+      //quote fader - Refactored so you can just add new quote divs to the markup to add more. 
+
+      //hide all quotes
+      $(".quote").hide();
+      $( ".quotation, .quotation2").hide();
+      
+      //var to hold quote
+      var quotes = $('.quote');
+
+      //counter
+      var i = 0;
+
+      //do stuff on a 7 sec interval
+      setInterval(function() { 
+         //fade out quote
+         $( quotes[i] ).fadeOut("easing");
+         $( ".quotation, .quotation2" ).fadeOut("easing");
+         //counter
+         i++;
+         //reset counter if greater or equal to how many quotes there are.
+         if(i >= quotes.length){ i = 0;};
+         console.log(i);
+         //fade in next quote
+         $( quotes[i] ).delay(1000).fadeIn("easing");
+         $( ".quotation, .quotation2").delay(1000).fadeIn("easing");
+      }, 7000); 
+
+
+      //scrolly fade for description section
+      $(window).scroll(function() {
+        var windowScroll = $(this).scrollTop();
+        var  windowWidth = $(window).width();
+        if ( windowWidth > 768 ) {
+          if ( windowScroll < 1300 ) {
+          $('.descriptionText').fadeOut("easing");
+          }
+          else if (windowScroll > 1300) {
+            $('.descriptionText').fadeIn("easing");
+          }
+        };
+      });
+
+  });
+
+  </script>
+
+</body>
+</html>

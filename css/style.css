@@ -1,0 +1,297 @@
+/***** BASE CLASSES *****/
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: black;
+	overflow-x: hidden;
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+}
+
+/***** COLOR *****/
+.orange{
+	color: #ED6418;
+}
+.red {
+	color: red;
+}
+
+/***** TYPOGRAPHY *****/
+h1, h2, h3, h4, h5, h6{
+	font-weight: bold;
+/*	color: #ED6418;*/
+	color: red;
+}
+p, ul{
+	text-align: left;
+	color: white;
+	margin-bottom: 2rem;
+}
+a{
+	color: #ED6418;
+}
+a:hover {
+	color: #5D5D5D;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/***** BUTTONS *****/
+
+.btn-cops { 
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  letter-spacing: .1rem;
+  color: #FFFFFF; 
+  background-color: #666666; 
+  border-color: #666666; 
+  margin: 0 auto 2rem auto;
+  padding: 1rem;
+} 
+ 
+.btn-cops:hover, 
+.btn-cops:focus, 
+.btn-cops:active, 
+.btn-cops.active, 
+.open .dropdown-toggle.btn-cops { 
+  color: #FFFFFF; 
+  background-color: #666666; 
+  border-color: #666666; 
+} 
+ 
+.btn-cops:active, 
+.btn-cops.active, 
+.open .dropdown-toggle.btn-cops { 
+  background-image: none; 
+} 
+ 
+.btn-cops.disabled, 
+.btn-cops[disabled], 
+fieldset[disabled] .btn-cops, 
+.btn-cops.disabled:hover, 
+.btn-cops[disabled]:hover, 
+fieldset[disabled] .btn-cops:hover, 
+.btn-cops.disabled:focus, 
+.btn-cops[disabled]:focus, 
+fieldset[disabled] .btn-cops:focus, 
+.btn-cops.disabled:active, 
+.btn-cops[disabled]:active, 
+fieldset[disabled] .btn-cops:active, 
+.btn-cops.disabled.active, 
+.btn-cops[disabled].active, 
+fieldset[disabled] .btn-cops.active { 
+  background-color: #666666; 
+  border-color: #666666; 
+} 
+
+/***** LAYOUT *****/
+
+/***** HEADER *****/
+header{
+	padding: 3rem 0 6rem 0;
+	overflow: hidden;
+}
+#logo{
+	width: 30rem;
+	margin: 5rem auto;
+}
+.title {
+	text-align: center;
+}
+.title h1 {
+	font-size: 2em;
+	text-transform: uppercase;
+}
+/*
+.handcops{
+	width: 38%;
+	height: 100%;
+	background-image: url("../img/handcops2.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -4rem;
+	left: -3rem;
+	overflow: auto;
+	z-index: 0;
+	opacity: 0.7;
+}
+.condoms{
+	width: 45%;
+	height: 100%;
+	background-image: url("../img/condoms.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	top:-5rem;
+	right: 0;
+	overflow: auto;
+	z-index: 0;
+	opacity: 0.7;
+}
+*/
+.intro{
+	margin-top: 4rem;
+	font-size: 3.2rem;
+	line-height: 4.5rem;
+}
+.order{
+	margin: 5rem auto;
+}
+/***** VIDEO *****/
+.video{
+	position: relative;
+	z-index: 2
+}
+.embed-container { 
+	position: relative;
+	left: 0; 
+	padding-bottom: 56.25%; 
+	height: 0; 
+	overflow: hidden; 
+	width: 100%; 
+} 
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed { 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+}
+/***** DESCRIPTION *****/
+.description{
+	padding: 15% 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	height: 100%;
+}
+
+
+.languages{
+	margin-top: 3rem;
+}
+/*
+.condoms2{
+	width: 60%;
+	height: 100%;
+	background-image: url("../img/condoms.svg");
+	background-repeat: none;
+	opacity: 0.7;
+	position: absolute;
+	top:0rem;
+	left: -30rem;
+	overflow: auto;
+	z-index: 0;
+	-ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg); 
+    transform: rotate(30deg);
+}
+*/
+
+/***** AWARDS *****/
+.awards{
+	background-color: white;
+	padding: 6rem 0;
+	position: relative;
+	z-index: 2;
+	height: 85rem;
+}
+#badge{
+	width: 70%;
+	margin-bottom:6rem;
+}
+.quotes{
+	position: relative;
+	padding: 0 2rem;
+}
+.quotation {
+	fill: #5D5D5D;
+	height: 50px;
+	width: 90%;
+	position: absolute;
+	top: -20px;
+	left: -50px;
+	background-image: url("../img/quotesUp.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background position: center;
+}
+
+.quotation2 {
+	height: 50px;
+	width: 90%;
+	position: absolute;
+	bottom: -100px;
+	right: -85%;
+	background-image: url("../img/quotesDown.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background position: center;
+	margin: -2rem 0 8rem 0;
+}
+/***** RESOURCES *****/
+.resources{
+	padding: 6rem 0;
+	background-color: black;
+	position: relative;
+	z-index: 2;
+	/*margin-bottom: 30rem;*/
+}
+/***** FOOTER *****/
+footer{
+	font-size: 1.8rem;
+	line-height: 2.4rem;
+	padding: 9rem 0;
+	background-color: #222;
+}
+
+/***** MEDIA QUERIES *****/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+	header{
+		height: 110rem;
+	}
+	#badge{
+		width: 30rem;
+	}
+	.awards{
+		height: 73rem;
+	}
+	.description{
+		height: 140rem;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.btn-cops-offset{
+		position: relative;
+		left: 2rem;
+	}
+	.order{
+		position: relative;
+		top: 6rem;
+	}
+	header{
+		height: 90rem;
+	}
+	.awards{
+		height: 69rem;
+	}
+	.description{
+		height: 110rem;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
